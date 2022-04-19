@@ -1,0 +1,1534 @@
+	.text
+	.syntax unified
+	.eabi_attribute	67, "2.09"	@ Tag_conformance
+	.cpu	cortex-m23
+	.eabi_attribute	6, 16	@ Tag_CPU_arch
+	.eabi_attribute	7, 77	@ Tag_CPU_arch_profile
+	.eabi_attribute	8, 0	@ Tag_ARM_ISA_use
+	.eabi_attribute	9, 3	@ Tag_THUMB_ISA_use
+	.eabi_attribute	34, 0	@ Tag_CPU_unaligned_access
+	.eabi_attribute	17, 1	@ Tag_ABI_PCS_GOT_use
+	.eabi_attribute	20, 2	@ Tag_ABI_FP_denormal
+	.eabi_attribute	21, 0	@ Tag_ABI_FP_exceptions
+	.eabi_attribute	23, 1	@ Tag_ABI_FP_number_model
+	.eabi_attribute	24, 1	@ Tag_ABI_align_needed
+	.eabi_attribute	25, 1	@ Tag_ABI_align_preserved
+	.eabi_attribute	38, 1	@ Tag_ABI_FP_16bit_format
+	.eabi_attribute	18, 2	@ Tag_ABI_PCS_wchar_t
+	.eabi_attribute	26, 1	@ Tag_ABI_enum_size
+	.eabi_attribute	14, 0	@ Tag_ABI_PCS_R9_use
+	.file	"algorithm.c"
+	.file	1 "D:\\Keil_v5\\ARM\\ARMCLANG\\Bin\\..\\include" "stdint.h"
+	.file	2 "E:\\Soway\\Soway_product-soft\\105 - T119-GD\\E230 -  ds18b20-F8\\MDK-ARM" "../APP/Src/algorithm.c"
+	.section	.text.Get_filter,"ax",%progbits
+	.hidden	Get_filter              @ -- Begin function Get_filter
+	.globl	Get_filter
+	.p2align	2
+	.type	Get_filter,%function
+	.code	16                      @ @Get_filter
+	.thumb_func
+Get_filter:
+.Lfunc_begin0:
+	.loc	2 7 0                   @ ../APP/Src/algorithm.c:7:0
+	.fnstart
+	.cfi_sections .debug_frame
+	.cfi_startproc
+@ %bb.0:
+	.pad	#60
+	sub	sp, #60
+	.cfi_def_cfa_offset 60
+	str	r0, [sp, #52]
+	add	r0, sp, #48
+	movs	r1, #0
+.Ltmp0:
+	.loc	2 8 10 prologue_end     @ ../APP/Src/algorithm.c:8:10
+	strb	r1, [r0]
+	add	r0, sp, #44
+	.loc	2 8 14 is_stmt 0        @ ../APP/Src/algorithm.c:8:14
+	strb	r1, [r0]
+	.loc	2 9 11 is_stmt 1        @ ../APP/Src/algorithm.c:9:11
+	str	r1, [sp, #40]
+	.loc	2 9 20 is_stmt 0        @ ../APP/Src/algorithm.c:9:20
+	str	r1, [sp, #36]
+	str	r1, [sp, #32]
+	str	r1, [sp, #28]
+	str	r1, [sp, #24]
+	str	r1, [sp, #20]
+	str	r1, [sp, #16]
+	str	r1, [sp, #12]
+	add	r0, sp, #4
+	.loc	2 13 10 is_stmt 1       @ ../APP/Src/algorithm.c:13:10
+	strb	r1, [r0]
+	mov	r2, sp
+	.loc	2 13 20 is_stmt 0       @ ../APP/Src/algorithm.c:13:20
+	strb	r1, [r2]
+.Ltmp1:
+	.loc	2 15 5 is_stmt 1        @ ../APP/Src/algorithm.c:15:5
+	ldrb	r0, [r0]
+.Ltmp2:
+	.loc	2 15 5 is_stmt 0        @ ../APP/Src/algorithm.c:15:5
+	cmp	r0, #9
+	blt	.LBB0_2
+	b	.LBB0_1
+.LBB0_1:
+	.loc	2 0 5                   @ ../APP/Src/algorithm.c:0:5
+	add	r0, sp, #4
+	movs	r1, #0
+.Ltmp3:
+	.loc	2 16 9 is_stmt 1        @ ../APP/Src/algorithm.c:16:9
+	strb	r1, [r0]
+	.loc	2 16 3 is_stmt 0        @ ../APP/Src/algorithm.c:16:3
+	b	.LBB0_2
+.Ltmp4:
+.LBB0_2:
+	.loc	2 0 3                   @ ../APP/Src/algorithm.c:0:3
+	mov	r0, sp
+.Ltmp5:
+	.loc	2 18 5 is_stmt 1        @ ../APP/Src/algorithm.c:18:5
+	ldrb	r0, [r0]
+.Ltmp6:
+	.loc	2 18 5 is_stmt 0        @ ../APP/Src/algorithm.c:18:5
+	cmp	r0, #7
+	bgt	.LBB0_7
+	b	.LBB0_3
+.LBB0_3:
+.Ltmp7:
+	.loc	2 20 8 is_stmt 1        @ ../APP/Src/algorithm.c:20:8
+	ldr	r0, __arm_cp.0_1
+	movs	r1, #0
+	str	r1, [r0]
+	.loc	2 21 10                 @ ../APP/Src/algorithm.c:21:10
+	ldr	r0, [sp]
+	adds	r0, r0, #1
+	mov	r2, sp
+	strb	r0, [r2]
+	.loc	2 22 29                 @ ../APP/Src/algorithm.c:22:29
+	ldr	r0, [sp, #52]
+	add	r2, sp, #4
+	.loc	2 22 12 is_stmt 0       @ ../APP/Src/algorithm.c:22:12
+	ldrb	r2, [r2]
+	.loc	2 22 3                  @ ../APP/Src/algorithm.c:22:3
+	lsls	r2, r2, #2
+	ldr	r3, __arm_cp.0_0
+	.loc	2 22 18                 @ ../APP/Src/algorithm.c:22:18
+	str	r0, [r3, r2]
+	add	r0, sp, #48
+.Ltmp8:
+	.loc	2 23 9 is_stmt 1        @ ../APP/Src/algorithm.c:23:9
+	strb	r1, [r0]
+	.loc	2 23 7 is_stmt 0        @ ../APP/Src/algorithm.c:23:7
+	b	.LBB0_4
+.LBB0_4:                                @ =>This Inner Loop Header: Depth=1
+	.loc	2 0 7                   @ ../APP/Src/algorithm.c:0:7
+	add	r0, sp, #48
+.Ltmp9:
+	.loc	2 23 13                 @ ../APP/Src/algorithm.c:23:13
+	ldrb	r0, [r0]
+	add	r1, sp, #4
+	.loc	2 23 18                 @ ../APP/Src/algorithm.c:23:18
+	ldrb	r1, [r1]
+.Ltmp10:
+	.loc	2 23 3                  @ ../APP/Src/algorithm.c:23:3
+	cmp	r0, r1
+	bgt	.LBB0_6
+	b	.LBB0_5
+.LBB0_5:                                @   in Loop: Header=BB0_4 Depth=1
+	.loc	2 0 3                   @ ../APP/Src/algorithm.c:0:3
+	add	r0, sp, #48
+.Ltmp11:
+	.loc	2 25 20 is_stmt 1       @ ../APP/Src/algorithm.c:25:20
+	ldrb	r1, [r0]
+	adds	r2, r1, #1
+	strb	r2, [r0]
+	.loc	2 25 10 is_stmt 0       @ ../APP/Src/algorithm.c:25:10
+	lsls	r0, r1, #2
+	ldr	r1, __arm_cp.0_0
+	ldr	r0, [r1, r0]
+	.loc	2 25 8                  @ ../APP/Src/algorithm.c:25:8
+	ldr	r1, __arm_cp.0_1
+	ldr	r2, [r1]
+	adds	r0, r2, r0
+	str	r0, [r1]
+.Ltmp12:
+	.loc	2 23 3 is_stmt 1        @ ../APP/Src/algorithm.c:23:3
+	b	.LBB0_4
+.Ltmp13:
+.LBB0_6:
+	.loc	2 27 8                  @ ../APP/Src/algorithm.c:27:8
+	ldr	r0, [sp, #4]
+	adds	r0, r0, #1
+	add	r1, sp, #4
+	strb	r0, [r1]
+	.loc	2 28 16                 @ ../APP/Src/algorithm.c:28:16
+	ldr	r0, [sp, #52]
+	.loc	2 28 9 is_stmt 0        @ ../APP/Src/algorithm.c:28:9
+	str	r0, [sp, #56]
+	b	.LBB0_24
+.Ltmp14:
+.LBB0_7:
+	.loc	2 32 28 is_stmt 1       @ ../APP/Src/algorithm.c:32:28
+	ldr	r0, [sp, #52]
+	add	r1, sp, #4
+	.loc	2 32 11 is_stmt 0       @ ../APP/Src/algorithm.c:32:11
+	ldrb	r2, [r1]
+	.loc	2 32 2                  @ ../APP/Src/algorithm.c:32:2
+	lsls	r2, r2, #2
+	ldr	r3, __arm_cp.0_0
+	.loc	2 32 17                 @ ../APP/Src/algorithm.c:32:17
+	str	r0, [r3, r2]
+	.loc	2 34 11 is_stmt 1       @ ../APP/Src/algorithm.c:34:11
+	ldr	r0, [sp, #4]
+	adds	r2, r0, #1
+	strb	r2, [r1]
+	add	r1, sp, #44
+	.loc	2 34 4 is_stmt 0        @ ../APP/Src/algorithm.c:34:4
+	strb	r0, [r1]
+	add	r0, sp, #48
+	movs	r1, #0
+.Ltmp15:
+	.loc	2 35 8 is_stmt 1        @ ../APP/Src/algorithm.c:35:8
+	strb	r1, [r0]
+	.loc	2 35 6 is_stmt 0        @ ../APP/Src/algorithm.c:35:6
+	b	.LBB0_8
+.LBB0_8:                                @ =>This Inner Loop Header: Depth=1
+	.loc	2 0 6                   @ ../APP/Src/algorithm.c:0:6
+	add	r0, sp, #48
+.Ltmp16:
+	.loc	2 35 12                 @ ../APP/Src/algorithm.c:35:12
+	ldrb	r0, [r0]
+.Ltmp17:
+	.loc	2 35 2                  @ ../APP/Src/algorithm.c:35:2
+	cmp	r0, #6
+	bgt	.LBB0_13
+	b	.LBB0_9
+.LBB0_9:                                @   in Loop: Header=BB0_8 Depth=1
+	.loc	2 0 2                   @ ../APP/Src/algorithm.c:0:2
+	add	r0, sp, #44
+.Ltmp18:
+	.loc	2 37 22 is_stmt 1       @ ../APP/Src/algorithm.c:37:22
+	ldrb	r1, [r0]
+	.loc	2 37 13 is_stmt 0       @ ../APP/Src/algorithm.c:37:13
+	lsls	r1, r1, #2
+	ldr	r2, __arm_cp.0_0
+	ldr	r1, [r2, r1]
+	add	r2, sp, #48
+	.loc	2 37 8                  @ ../APP/Src/algorithm.c:37:8
+	ldrb	r2, [r2]
+	.loc	2 37 3                  @ ../APP/Src/algorithm.c:37:3
+	lsls	r2, r2, #2
+	add	r3, sp, #12
+	.loc	2 37 11                 @ ../APP/Src/algorithm.c:37:11
+	str	r1, [r3, r2]
+.Ltmp19:
+	.loc	2 38 6 is_stmt 1        @ ../APP/Src/algorithm.c:38:6
+	ldrb	r0, [r0]
+.Ltmp20:
+	.loc	2 38 6 is_stmt 0        @ ../APP/Src/algorithm.c:38:6
+	cmp	r0, #0
+	bgt	.LBB0_11
+	b	.LBB0_10
+.LBB0_10:                               @   in Loop: Header=BB0_8 Depth=1
+	.loc	2 0 6                   @ ../APP/Src/algorithm.c:0:6
+	add	r0, sp, #44
+	movs	r1, #9
+.Ltmp21:
+	.loc	2 39 6 is_stmt 1        @ ../APP/Src/algorithm.c:39:6
+	strb	r1, [r0]
+	.loc	2 39 4 is_stmt 0        @ ../APP/Src/algorithm.c:39:4
+	b	.LBB0_11
+.Ltmp22:
+.LBB0_11:                               @   in Loop: Header=BB0_8 Depth=1
+	.loc	2 40 4 is_stmt 1        @ ../APP/Src/algorithm.c:40:4
+	ldr	r0, [sp, #44]
+	subs	r0, r0, #1
+	add	r1, sp, #44
+	strb	r0, [r1]
+	.loc	2 41 2                  @ ../APP/Src/algorithm.c:41:2
+	b	.LBB0_12
+.Ltmp23:
+.LBB0_12:                               @   in Loop: Header=BB0_8 Depth=1
+	.loc	2 35 17                 @ ../APP/Src/algorithm.c:35:17
+	ldr	r0, [sp, #48]
+	adds	r0, r0, #1
+	add	r1, sp, #48
+	strb	r0, [r1]
+	.loc	2 35 2 is_stmt 0        @ ../APP/Src/algorithm.c:35:2
+	b	.LBB0_8
+.Ltmp24:
+.LBB0_13:
+	.loc	2 0 2                   @ ../APP/Src/algorithm.c:0:2
+	add	r0, sp, #48
+	movs	r1, #0
+.Ltmp25:
+	.loc	2 43 7 is_stmt 1        @ ../APP/Src/algorithm.c:43:7
+	strb	r1, [r0]
+	.loc	2 43 6 is_stmt 0        @ ../APP/Src/algorithm.c:43:6
+	b	.LBB0_14
+.LBB0_14:                               @ =>This Loop Header: Depth=1
+                                        @     Child Loop BB0_16 Depth 2
+	.loc	2 0 6                   @ ../APP/Src/algorithm.c:0:6
+	add	r0, sp, #48
+.Ltmp26:
+	.loc	2 43 11                 @ ../APP/Src/algorithm.c:43:11
+	ldrb	r0, [r0]
+.Ltmp27:
+	.loc	2 43 2                  @ ../APP/Src/algorithm.c:43:2
+	cmp	r0, #6
+	bgt	.LBB0_23
+	b	.LBB0_15
+.LBB0_15:                               @   in Loop: Header=BB0_14 Depth=1
+	.loc	2 0 2                   @ ../APP/Src/algorithm.c:0:2
+	add	r0, sp, #44
+	movs	r1, #0
+.Ltmp28:
+	.loc	2 45 8 is_stmt 1        @ ../APP/Src/algorithm.c:45:8
+	strb	r1, [r0]
+	.loc	2 45 7 is_stmt 0        @ ../APP/Src/algorithm.c:45:7
+	b	.LBB0_16
+.LBB0_16:                               @   Parent Loop BB0_14 Depth=1
+                                        @ =>  This Inner Loop Header: Depth=2
+	.loc	2 0 7                   @ ../APP/Src/algorithm.c:0:7
+	add	r0, sp, #44
+.Ltmp29:
+	.loc	2 45 12                 @ ../APP/Src/algorithm.c:45:12
+	ldrb	r0, [r0]
+	add	r1, sp, #48
+	.loc	2 45 16                 @ ../APP/Src/algorithm.c:45:16
+	ldrb	r1, [r1]
+	movs	r2, #7
+	.loc	2 45 15                 @ ../APP/Src/algorithm.c:45:15
+	subs	r1, r2, r1
+.Ltmp30:
+	.loc	2 45 3                  @ ../APP/Src/algorithm.c:45:3
+	cmp	r0, r1
+	bge	.LBB0_21
+	b	.LBB0_17
+.LBB0_17:                               @   in Loop: Header=BB0_16 Depth=2
+	.loc	2 0 3                   @ ../APP/Src/algorithm.c:0:3
+	add	r0, sp, #44
+.Ltmp31:
+	.loc	2 47 12 is_stmt 1       @ ../APP/Src/algorithm.c:47:12
+	ldrb	r0, [r0]
+	.loc	2 47 7 is_stmt 0        @ ../APP/Src/algorithm.c:47:7
+	lsls	r0, r0, #2
+	add	r1, sp, #12
+	adds	r2, r1, r0
+	ldr	r0, [r1, r0]
+	.loc	2 47 17                 @ ../APP/Src/algorithm.c:47:17
+	ldr	r1, [r2, #4]
+.Ltmp32:
+	.loc	2 47 7                  @ ../APP/Src/algorithm.c:47:7
+	cmp	r0, r1
+	bls	.LBB0_19
+	b	.LBB0_18
+.LBB0_18:                               @   in Loop: Header=BB0_16 Depth=2
+	.loc	2 0 7                   @ ../APP/Src/algorithm.c:0:7
+	add	r0, sp, #44
+.Ltmp33:
+	.loc	2 49 17 is_stmt 1       @ ../APP/Src/algorithm.c:49:17
+	ldrb	r1, [r0]
+	.loc	2 49 12 is_stmt 0       @ ../APP/Src/algorithm.c:49:12
+	lsls	r1, r1, #2
+	add	r2, sp, #12
+	ldr	r1, [r2, r1]
+	.loc	2 49 10                 @ ../APP/Src/algorithm.c:49:10
+	str	r1, [sp, #40]
+	.loc	2 50 20 is_stmt 1       @ ../APP/Src/algorithm.c:50:20
+	ldrb	r1, [r0]
+	.loc	2 50 21 is_stmt 0       @ ../APP/Src/algorithm.c:50:21
+	lsls	r1, r1, #2
+	.loc	2 50 5                  @ ../APP/Src/algorithm.c:50:5
+	adds	r3, r2, r1
+	.loc	2 50 15                 @ ../APP/Src/algorithm.c:50:15
+	ldr	r3, [r3, #4]
+	.loc	2 50 13                 @ ../APP/Src/algorithm.c:50:13
+	str	r3, [r2, r1]
+	.loc	2 51 17 is_stmt 1       @ ../APP/Src/algorithm.c:51:17
+	ldr	r1, [sp, #40]
+	.loc	2 51 10 is_stmt 0       @ ../APP/Src/algorithm.c:51:10
+	ldrb	r0, [r0]
+	.loc	2 51 11                 @ ../APP/Src/algorithm.c:51:11
+	lsls	r0, r0, #2
+	.loc	2 51 5                  @ ../APP/Src/algorithm.c:51:5
+	adds	r0, r0, r2
+	.loc	2 51 15                 @ ../APP/Src/algorithm.c:51:15
+	str	r1, [r0, #4]
+	.loc	2 52 4 is_stmt 1        @ ../APP/Src/algorithm.c:52:4
+	b	.LBB0_19
+.Ltmp34:
+.LBB0_19:                               @   in Loop: Header=BB0_16 Depth=2
+	.loc	2 53 3                  @ ../APP/Src/algorithm.c:53:3
+	b	.LBB0_20
+.Ltmp35:
+.LBB0_20:                               @   in Loop: Header=BB0_16 Depth=2
+	.loc	2 45 20                 @ ../APP/Src/algorithm.c:45:20
+	ldr	r0, [sp, #44]
+	adds	r0, r0, #1
+	add	r1, sp, #44
+	strb	r0, [r1]
+	.loc	2 45 3 is_stmt 0        @ ../APP/Src/algorithm.c:45:3
+	b	.LBB0_16
+.Ltmp36:
+.LBB0_21:                               @   in Loop: Header=BB0_14 Depth=1
+	.loc	2 54 2 is_stmt 1        @ ../APP/Src/algorithm.c:54:2
+	b	.LBB0_22
+.Ltmp37:
+.LBB0_22:                               @   in Loop: Header=BB0_14 Depth=1
+	.loc	2 43 17                 @ ../APP/Src/algorithm.c:43:17
+	ldr	r0, [sp, #48]
+	adds	r0, r0, #1
+	add	r1, sp, #48
+	strb	r0, [r1]
+	.loc	2 43 2 is_stmt 0        @ ../APP/Src/algorithm.c:43:2
+	b	.LBB0_14
+.Ltmp38:
+.LBB0_23:
+	.loc	2 56 19 is_stmt 1       @ ../APP/Src/algorithm.c:56:19
+	ldr	r0, [sp, #16]
+	.loc	2 56 27 is_stmt 0       @ ../APP/Src/algorithm.c:56:27
+	ldr	r1, [sp, #20]
+	.loc	2 56 26                 @ ../APP/Src/algorithm.c:56:26
+	adds	r0, r0, r1
+	.loc	2 56 35                 @ ../APP/Src/algorithm.c:56:35
+	ldr	r1, [sp, #24]
+	.loc	2 56 34                 @ ../APP/Src/algorithm.c:56:34
+	adds	r0, r0, r1
+	.loc	2 56 43                 @ ../APP/Src/algorithm.c:56:43
+	ldr	r1, [sp, #28]
+	.loc	2 56 42                 @ ../APP/Src/algorithm.c:56:42
+	adds	r0, r0, r1
+	.loc	2 56 51                 @ ../APP/Src/algorithm.c:56:51
+	ldr	r1, [sp, #32]
+	.loc	2 56 50                 @ ../APP/Src/algorithm.c:56:50
+	adds	r0, r0, r1
+	.loc	2 56 11                 @ ../APP/Src/algorithm.c:56:11
+	str	r0, [sp, #8]
+	.loc	2 58 9 is_stmt 1        @ ../APP/Src/algorithm.c:58:9
+	ldr	r0, [sp, #8]
+	.loc	2 58 2 is_stmt 0        @ ../APP/Src/algorithm.c:58:2
+	str	r0, [sp, #56]
+	b	.LBB0_24
+.LBB0_24:
+	.loc	2 59 1 is_stmt 1        @ ../APP/Src/algorithm.c:59:1
+	ldr	r0, [sp, #56]
+	add	sp, #60
+	bx	lr
+.Ltmp39:
+	.p2align	2
+@ %bb.25:
+	.loc	2 0 1 is_stmt 0         @ ../APP/Src/algorithm.c:0:1
+__arm_cp.0_0:
+	.long	Get_filter.buf_PCap
+.Lcpi_end0:
+	.size	__arm_cp.0_0, .Lcpi_end0-__arm_cp.0_0
+__arm_cp.0_1:
+	.long	Get_filter.buf2
+.Lcpi_end1:
+	.size	__arm_cp.0_1, .Lcpi_end1-__arm_cp.0_1
+.Lfunc_end0:
+	.size	Get_filter, .Lfunc_end0-Get_filter
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.section	.text.GetDelExtremeAndAverage,"ax",%progbits
+	.hidden	GetDelExtremeAndAverage @ -- Begin function GetDelExtremeAndAverage
+	.globl	GetDelExtremeAndAverage
+	.p2align	1
+	.type	GetDelExtremeAndAverage,%function
+	.code	16                      @ @GetDelExtremeAndAverage
+	.thumb_func
+GetDelExtremeAndAverage:
+.Lfunc_begin1:
+	.loc	2 161 0 is_stmt 1       @ ../APP/Src/algorithm.c:161:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	.save	{r7, lr}
+	push	{r7, lr}
+	.cfi_def_cfa_offset 8
+	.cfi_offset lr, -4
+	.cfi_offset r7, -8
+	.pad	#16
+	sub	sp, #16
+	.cfi_def_cfa_offset 24
+	str	r0, [sp, #12]
+	str	r1, [sp, #8]
+	str	r2, [sp, #4]
+	str	r3, [sp]
+.Ltmp40:
+	.loc	2 162 22 prologue_end   @ ../APP/Src/algorithm.c:162:22
+	ldr	r0, [sp, #12]
+	.loc	2 162 29 is_stmt 0      @ ../APP/Src/algorithm.c:162:29
+	ldr	r1, [sp, #8]
+	.loc	2 162 40                @ ../APP/Src/algorithm.c:162:40
+	ldr	r2, [sp, #4]
+	.loc	2 162 54                @ ../APP/Src/algorithm.c:162:54
+	ldr	r3, [sp]
+	.loc	2 162 5                 @ ../APP/Src/algorithm.c:162:5
+	bl	SortArrayExtreme
+	.loc	2 163 23 is_stmt 1      @ ../APP/Src/algorithm.c:163:23
+	ldr	r0, [sp, #12]
+	.loc	2 163 30 is_stmt 0      @ ../APP/Src/algorithm.c:163:30
+	ldr	r1, [sp, #8]
+	.loc	2 163 41                @ ../APP/Src/algorithm.c:163:41
+	ldr	r2, [sp, #4]
+	.loc	2 163 55                @ ../APP/Src/algorithm.c:163:55
+	ldr	r3, [sp]
+	.loc	2 163 12                @ ../APP/Src/algorithm.c:163:12
+	bl	GetAverage
+	.loc	2 163 5                 @ ../APP/Src/algorithm.c:163:5
+	add	sp, #16
+	pop	{r7, pc}
+.Ltmp41:
+.Lfunc_end1:
+	.size	GetDelExtremeAndAverage, .Lfunc_end1-GetDelExtremeAndAverage
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.section	.text.SortArrayExtreme,"ax",%progbits
+	.p2align	1               @ -- Begin function SortArrayExtreme
+	.type	SortArrayExtreme,%function
+	.code	16                      @ @SortArrayExtreme
+	.thumb_func
+SortArrayExtreme:
+.Lfunc_begin2:
+	.loc	2 78 0 is_stmt 1        @ ../APP/Src/algorithm.c:78:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	.pad	#28
+	sub	sp, #28
+	.cfi_def_cfa_offset 28
+	str	r0, [sp, #24]
+	str	r1, [sp, #20]
+	str	r2, [sp, #16]
+	str	r3, [sp, #12]
+	movs	r0, #0
+.Ltmp42:
+	.loc	2 82 12 prologue_end    @ ../APP/Src/algorithm.c:82:12
+	str	r0, [sp, #8]
+	.loc	2 82 10 is_stmt 0       @ ../APP/Src/algorithm.c:82:10
+	b	.LBB2_1
+.LBB2_1:                                @ =>This Loop Header: Depth=1
+                                        @     Child Loop BB2_3 Depth 2
+.Ltmp43:
+	.loc	2 82 17                 @ ../APP/Src/algorithm.c:82:17
+	ldr	r0, [sp, #8]
+	.loc	2 82 21                 @ ../APP/Src/algorithm.c:82:21
+	ldr	r1, [sp, #12]
+.Ltmp44:
+	.loc	2 82 5                  @ ../APP/Src/algorithm.c:82:5
+	cmp	r0, r1
+	bhs	.LBB2_10
+	b	.LBB2_2
+.LBB2_2:                                @   in Loop: Header=BB2_1 Depth=1
+	.loc	2 0 5                   @ ../APP/Src/algorithm.c:0:5
+	movs	r0, #0
+.Ltmp45:
+	.loc	2 84 16 is_stmt 1       @ ../APP/Src/algorithm.c:84:16
+	str	r0, [sp, #4]
+	.loc	2 84 14 is_stmt 0       @ ../APP/Src/algorithm.c:84:14
+	b	.LBB2_3
+.LBB2_3:                                @   Parent Loop BB2_1 Depth=1
+                                        @ =>  This Inner Loop Header: Depth=2
+.Ltmp46:
+	.loc	2 84 21                 @ ../APP/Src/algorithm.c:84:21
+	ldr	r0, [sp, #4]
+	.loc	2 84 25                 @ ../APP/Src/algorithm.c:84:25
+	ldr	r1, [sp, #20]
+	.loc	2 84 37                 @ ../APP/Src/algorithm.c:84:37
+	ldr	r2, [sp, #8]
+	.loc	2 84 39                 @ ../APP/Src/algorithm.c:84:39
+	mvns	r2, r2
+	adds	r1, r2, r1
+.Ltmp47:
+	.loc	2 84 9                  @ ../APP/Src/algorithm.c:84:9
+	cmp	r0, r1
+	bhs	.LBB2_8
+	b	.LBB2_4
+.LBB2_4:                                @   in Loop: Header=BB2_3 Depth=2
+.Ltmp48:
+	.loc	2 86 17 is_stmt 1       @ ../APP/Src/algorithm.c:86:17
+	ldr	r0, [sp, #24]
+	.loc	2 86 23 is_stmt 0       @ ../APP/Src/algorithm.c:86:23
+	ldr	r1, [sp, #4]
+	.loc	2 86 17                 @ ../APP/Src/algorithm.c:86:17
+	lsls	r1, r1, #2
+	adds	r2, r0, r1
+	ldr	r0, [r0, r1]
+	.loc	2 86 28                 @ ../APP/Src/algorithm.c:86:28
+	ldr	r1, [r2, #4]
+.Ltmp49:
+	.loc	2 86 17                 @ ../APP/Src/algorithm.c:86:17
+	cmp	r0, r1
+	ble	.LBB2_6
+	b	.LBB2_5
+.LBB2_5:                                @   in Loop: Header=BB2_3 Depth=2
+.Ltmp50:
+	.loc	2 88 24 is_stmt 1       @ ../APP/Src/algorithm.c:88:24
+	ldr	r0, [sp, #24]
+	.loc	2 88 30 is_stmt 0       @ ../APP/Src/algorithm.c:88:30
+	ldr	r1, [sp, #4]
+	.loc	2 88 24                 @ ../APP/Src/algorithm.c:88:24
+	lsls	r1, r1, #2
+	ldr	r0, [r0, r1]
+	.loc	2 88 22                 @ ../APP/Src/algorithm.c:88:22
+	str	r0, [sp]
+	.loc	2 89 28 is_stmt 1       @ ../APP/Src/algorithm.c:89:28
+	ldr	r0, [sp, #24]
+	.loc	2 89 34 is_stmt 0       @ ../APP/Src/algorithm.c:89:34
+	ldr	r1, [sp, #4]
+	.loc	2 89 35                 @ ../APP/Src/algorithm.c:89:35
+	lsls	r1, r1, #2
+	.loc	2 89 17                 @ ../APP/Src/algorithm.c:89:17
+	adds	r2, r0, r1
+	.loc	2 89 28                 @ ../APP/Src/algorithm.c:89:28
+	ldr	r2, [r2, #4]
+	.loc	2 89 26                 @ ../APP/Src/algorithm.c:89:26
+	str	r2, [r0, r1]
+	.loc	2 90 30 is_stmt 1       @ ../APP/Src/algorithm.c:90:30
+	ldr	r0, [sp]
+	.loc	2 90 17 is_stmt 0       @ ../APP/Src/algorithm.c:90:17
+	ldr	r1, [sp, #24]
+	.loc	2 90 23                 @ ../APP/Src/algorithm.c:90:23
+	ldr	r2, [sp, #4]
+	.loc	2 90 24                 @ ../APP/Src/algorithm.c:90:24
+	lsls	r2, r2, #2
+	.loc	2 90 17                 @ ../APP/Src/algorithm.c:90:17
+	adds	r1, r2, r1
+	.loc	2 90 28                 @ ../APP/Src/algorithm.c:90:28
+	str	r0, [r1, #4]
+	.loc	2 91 13 is_stmt 1       @ ../APP/Src/algorithm.c:91:13
+	b	.LBB2_6
+.Ltmp51:
+.LBB2_6:                                @   in Loop: Header=BB2_3 Depth=2
+	.loc	2 92 9                  @ ../APP/Src/algorithm.c:92:9
+	b	.LBB2_7
+.Ltmp52:
+.LBB2_7:                                @   in Loop: Header=BB2_3 Depth=2
+	.loc	2 84 45                 @ ../APP/Src/algorithm.c:84:45
+	ldr	r0, [sp, #4]
+	adds	r0, r0, #1
+	str	r0, [sp, #4]
+	.loc	2 84 9 is_stmt 0        @ ../APP/Src/algorithm.c:84:9
+	b	.LBB2_3
+.Ltmp53:
+.LBB2_8:                                @   in Loop: Header=BB2_1 Depth=1
+	.loc	2 93 5 is_stmt 1        @ ../APP/Src/algorithm.c:93:5
+	b	.LBB2_9
+.Ltmp54:
+.LBB2_9:                                @   in Loop: Header=BB2_1 Depth=1
+	.loc	2 82 36                 @ ../APP/Src/algorithm.c:82:36
+	ldr	r0, [sp, #8]
+	adds	r0, r0, #1
+	str	r0, [sp, #8]
+	.loc	2 82 5 is_stmt 0        @ ../APP/Src/algorithm.c:82:5
+	b	.LBB2_1
+.Ltmp55:
+.LBB2_10:
+	.loc	2 0 5                   @ ../APP/Src/algorithm.c:0:5
+	movs	r0, #0
+.Ltmp56:
+	.loc	2 95 12 is_stmt 1       @ ../APP/Src/algorithm.c:95:12
+	str	r0, [sp, #8]
+	.loc	2 95 10 is_stmt 0       @ ../APP/Src/algorithm.c:95:10
+	b	.LBB2_11
+.LBB2_11:                               @ =>This Loop Header: Depth=1
+                                        @     Child Loop BB2_13 Depth 2
+.Ltmp57:
+	.loc	2 95 17                 @ ../APP/Src/algorithm.c:95:17
+	ldr	r0, [sp, #8]
+	.loc	2 95 21                 @ ../APP/Src/algorithm.c:95:21
+	ldr	r1, [sp, #16]
+.Ltmp58:
+	.loc	2 95 5                  @ ../APP/Src/algorithm.c:95:5
+	cmp	r0, r1
+	bhs	.LBB2_20
+	b	.LBB2_12
+.LBB2_12:                               @   in Loop: Header=BB2_11 Depth=1
+.Ltmp59:
+	.loc	2 97 18 is_stmt 1       @ ../APP/Src/algorithm.c:97:18
+	ldr	r0, [sp, #20]
+	.loc	2 97 30 is_stmt 0       @ ../APP/Src/algorithm.c:97:30
+	ldr	r1, [sp, #12]
+	.loc	2 97 43                 @ ../APP/Src/algorithm.c:97:43
+	mvns	r1, r1
+	adds	r0, r1, r0
+	.loc	2 97 16                 @ ../APP/Src/algorithm.c:97:16
+	str	r0, [sp, #4]
+	.loc	2 97 14                 @ ../APP/Src/algorithm.c:97:14
+	b	.LBB2_13
+.LBB2_13:                               @   Parent Loop BB2_11 Depth=1
+                                        @ =>  This Inner Loop Header: Depth=2
+.Ltmp60:
+	.loc	2 97 49                 @ ../APP/Src/algorithm.c:97:49
+	ldr	r0, [sp, #4]
+	.loc	2 97 53                 @ ../APP/Src/algorithm.c:97:53
+	ldr	r1, [sp, #8]
+.Ltmp61:
+	.loc	2 97 9                  @ ../APP/Src/algorithm.c:97:9
+	cmp	r0, r1
+	bls	.LBB2_18
+	b	.LBB2_14
+.LBB2_14:                               @   in Loop: Header=BB2_13 Depth=2
+.Ltmp62:
+	.loc	2 99 17 is_stmt 1       @ ../APP/Src/algorithm.c:99:17
+	ldr	r0, [sp, #24]
+	.loc	2 99 23 is_stmt 0       @ ../APP/Src/algorithm.c:99:23
+	ldr	r1, [sp, #4]
+	.loc	2 99 25                 @ ../APP/Src/algorithm.c:99:25
+	lsls	r1, r1, #2
+	.loc	2 99 32                 @ ../APP/Src/algorithm.c:99:32
+	adds	r2, r0, r1
+	.loc	2 99 17                 @ ../APP/Src/algorithm.c:99:17
+	subs	r2, r2, #4
+	ldr	r2, [r2]
+	.loc	2 99 32                 @ ../APP/Src/algorithm.c:99:32
+	ldr	r0, [r0, r1]
+.Ltmp63:
+	.loc	2 99 17                 @ ../APP/Src/algorithm.c:99:17
+	cmp	r2, r0
+	ble	.LBB2_16
+	b	.LBB2_15
+.LBB2_15:                               @   in Loop: Header=BB2_13 Depth=2
+.Ltmp64:
+	.loc	2 101 24 is_stmt 1      @ ../APP/Src/algorithm.c:101:24
+	ldr	r0, [sp, #24]
+	.loc	2 101 30 is_stmt 0      @ ../APP/Src/algorithm.c:101:30
+	ldr	r1, [sp, #4]
+	.loc	2 101 32                @ ../APP/Src/algorithm.c:101:32
+	lsls	r1, r1, #2
+	.loc	2 101 24                @ ../APP/Src/algorithm.c:101:24
+	adds	r0, r1, r0
+	subs	r0, r0, #4
+	ldr	r0, [r0]
+	.loc	2 101 22                @ ../APP/Src/algorithm.c:101:22
+	str	r0, [sp]
+	.loc	2 102 32 is_stmt 1      @ ../APP/Src/algorithm.c:102:32
+	ldr	r0, [sp, #24]
+	.loc	2 102 38 is_stmt 0      @ ../APP/Src/algorithm.c:102:38
+	ldr	r1, [sp, #4]
+	.loc	2 102 32                @ ../APP/Src/algorithm.c:102:32
+	lsls	r1, r1, #2
+	adds	r2, r0, r1
+	ldr	r0, [r0, r1]
+	.loc	2 102 17                @ ../APP/Src/algorithm.c:102:17
+	subs	r1, r2, #4
+	.loc	2 102 30                @ ../APP/Src/algorithm.c:102:30
+	str	r0, [r1]
+	.loc	2 103 28 is_stmt 1      @ ../APP/Src/algorithm.c:103:28
+	ldr	r0, [sp]
+	.loc	2 103 17 is_stmt 0      @ ../APP/Src/algorithm.c:103:17
+	ldr	r1, [sp, #24]
+	.loc	2 103 23                @ ../APP/Src/algorithm.c:103:23
+	ldr	r2, [sp, #4]
+	.loc	2 103 17                @ ../APP/Src/algorithm.c:103:17
+	lsls	r2, r2, #2
+	.loc	2 103 26                @ ../APP/Src/algorithm.c:103:26
+	str	r0, [r1, r2]
+	.loc	2 104 13 is_stmt 1      @ ../APP/Src/algorithm.c:104:13
+	b	.LBB2_16
+.Ltmp65:
+.LBB2_16:                               @   in Loop: Header=BB2_13 Depth=2
+	.loc	2 105 9                 @ ../APP/Src/algorithm.c:105:9
+	b	.LBB2_17
+.Ltmp66:
+.LBB2_17:                               @   in Loop: Header=BB2_13 Depth=2
+	.loc	2 97 57                 @ ../APP/Src/algorithm.c:97:57
+	ldr	r0, [sp, #4]
+	subs	r0, r0, #1
+	str	r0, [sp, #4]
+	.loc	2 97 9 is_stmt 0        @ ../APP/Src/algorithm.c:97:9
+	b	.LBB2_13
+.Ltmp67:
+.LBB2_18:                               @   in Loop: Header=BB2_11 Depth=1
+	.loc	2 106 5 is_stmt 1       @ ../APP/Src/algorithm.c:106:5
+	b	.LBB2_19
+.Ltmp68:
+.LBB2_19:                               @   in Loop: Header=BB2_11 Depth=1
+	.loc	2 95 36                 @ ../APP/Src/algorithm.c:95:36
+	ldr	r0, [sp, #8]
+	adds	r0, r0, #1
+	str	r0, [sp, #8]
+	.loc	2 95 5 is_stmt 0        @ ../APP/Src/algorithm.c:95:5
+	b	.LBB2_11
+.Ltmp69:
+.LBB2_20:
+	.loc	2 107 1 is_stmt 1       @ ../APP/Src/algorithm.c:107:1
+	add	sp, #28
+	bx	lr
+.Ltmp70:
+.Lfunc_end2:
+	.size	SortArrayExtreme, .Lfunc_end2-SortArrayExtreme
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.section	.text.GetAverage,"ax",%progbits
+	.p2align	1               @ -- Begin function GetAverage
+	.type	GetAverage,%function
+	.code	16                      @ @GetAverage
+	.thumb_func
+GetAverage:
+.Lfunc_begin3:
+	.loc	2 127 0                 @ ../APP/Src/algorithm.c:127:0
+	.fnstart
+	.cfi_startproc
+@ %bb.0:
+	.save	{r7, lr}
+	push	{r7, lr}
+	.cfi_def_cfa_offset 8
+	.cfi_offset lr, -4
+	.cfi_offset r7, -8
+	.pad	#40
+	sub	sp, #40
+	.cfi_def_cfa_offset 48
+	str	r0, [sp, #32]
+	str	r1, [sp, #28]
+	str	r2, [sp, #24]
+	str	r3, [sp, #20]
+	movs	r0, #0
+.Ltmp71:
+	.loc	2 128 19 prologue_end   @ ../APP/Src/algorithm.c:128:19
+	str	r0, [sp, #12]
+	str	r0, [sp, #8]
+.Ltmp72:
+	.loc	2 130 10                @ ../APP/Src/algorithm.c:130:10
+	ldr	r0, [sp, #24]
+	.loc	2 130 24 is_stmt 0      @ ../APP/Src/algorithm.c:130:24
+	ldr	r1, [sp, #20]
+	.loc	2 130 22                @ ../APP/Src/algorithm.c:130:22
+	adds	r0, r0, r1
+	.loc	2 130 40                @ ../APP/Src/algorithm.c:130:40
+	ldr	r1, [sp, #28]
+.Ltmp73:
+	.loc	2 130 9                 @ ../APP/Src/algorithm.c:130:9
+	cmp	r0, r1
+	blo	.LBB3_2
+	b	.LBB3_1
+.LBB3_1:
+	.loc	2 0 9                   @ ../APP/Src/algorithm.c:0:9
+	movs	r0, #0
+.Ltmp74:
+	.loc	2 132 9 is_stmt 1       @ ../APP/Src/algorithm.c:132:9
+	str	r0, [sp, #36]
+	b	.LBB3_7
+.Ltmp75:
+.LBB3_2:
+	.loc	2 135 19                @ ../APP/Src/algorithm.c:135:19
+	ldr	r0, [sp, #24]
+	.loc	2 135 15 is_stmt 0      @ ../APP/Src/algorithm.c:135:15
+	str	r0, [sp, #4]
+	.loc	2 135 10                @ ../APP/Src/algorithm.c:135:10
+	b	.LBB3_3
+.LBB3_3:                                @ =>This Inner Loop Header: Depth=1
+.Ltmp76:
+	.loc	2 135 32                @ ../APP/Src/algorithm.c:135:32
+	ldr	r0, [sp, #4]
+	.loc	2 135 36                @ ../APP/Src/algorithm.c:135:36
+	ldr	r1, [sp, #28]
+	.loc	2 135 48                @ ../APP/Src/algorithm.c:135:48
+	ldr	r2, [sp, #20]
+	.loc	2 135 46                @ ../APP/Src/algorithm.c:135:46
+	subs	r1, r1, r2
+.Ltmp77:
+	.loc	2 135 5                 @ ../APP/Src/algorithm.c:135:5
+	cmp	r0, r1
+	bhs	.LBB3_6
+	b	.LBB3_4
+.LBB3_4:                                @   in Loop: Header=BB3_3 Depth=1
+.Ltmp78:
+	.loc	2 137 16 is_stmt 1      @ ../APP/Src/algorithm.c:137:16
+	ldr	r0, [sp, #32]
+	.loc	2 137 22 is_stmt 0      @ ../APP/Src/algorithm.c:137:22
+	ldr	r1, [sp, #4]
+	.loc	2 137 16                @ ../APP/Src/algorithm.c:137:16
+	lsls	r1, r1, #2
+	ldr	r0, [r0, r1]
+	asrs	r1, r0, #31
+	.loc	2 137 13                @ ../APP/Src/algorithm.c:137:13
+	ldr	r2, [sp, #12]
+	ldr	r3, [sp, #8]
+	adds	r0, r3, r0
+	adcs	r2, r1
+	str	r0, [sp, #8]
+	str	r2, [sp, #12]
+	.loc	2 138 5 is_stmt 1       @ ../APP/Src/algorithm.c:138:5
+	b	.LBB3_5
+.Ltmp79:
+.LBB3_5:                                @   in Loop: Header=BB3_3 Depth=1
+	.loc	2 135 62                @ ../APP/Src/algorithm.c:135:62
+	ldr	r0, [sp, #4]
+	adds	r0, r0, #1
+	str	r0, [sp, #4]
+	.loc	2 135 5 is_stmt 0       @ ../APP/Src/algorithm.c:135:5
+	b	.LBB3_3
+.Ltmp80:
+.LBB3_6:
+	.loc	2 140 12 is_stmt 1      @ ../APP/Src/algorithm.c:140:12
+	ldr	r0, [sp, #8]
+	ldr	r1, [sp, #12]
+	.loc	2 140 19 is_stmt 0      @ ../APP/Src/algorithm.c:140:19
+	ldr	r2, [sp, #28]
+	.loc	2 140 31                @ ../APP/Src/algorithm.c:140:31
+	ldr	r3, [sp, #24]
+	.loc	2 140 29                @ ../APP/Src/algorithm.c:140:29
+	subs	r2, r2, r3
+	.loc	2 140 45                @ ../APP/Src/algorithm.c:140:45
+	ldr	r3, [sp, #20]
+	.loc	2 140 43                @ ../APP/Src/algorithm.c:140:43
+	subs	r2, r2, r3
+	movs	r3, #0
+	.loc	2 140 16                @ ../APP/Src/algorithm.c:140:16
+	bl	__aeabi_ldivmod
+	.loc	2 140 5                 @ ../APP/Src/algorithm.c:140:5
+	str	r0, [sp, #36]
+	b	.LBB3_7
+.LBB3_7:
+	.loc	2 141 1 is_stmt 1       @ ../APP/Src/algorithm.c:141:1
+	ldr	r0, [sp, #36]
+	add	sp, #40
+	pop	{r7, pc}
+.Ltmp81:
+.Lfunc_end3:
+	.size	GetAverage, .Lfunc_end3-GetAverage
+	.cfi_endproc
+	.cantunwind
+	.fnend
+                                        @ -- End function
+	.type	Get_filter.buf_PCap,%object @ @Get_filter.buf_PCap
+	.section	.bss.Get_filter.buf_PCap,"aw",%nobits
+	.p2align	2
+Get_filter.buf_PCap:
+	.zero	36
+	.size	Get_filter.buf_PCap, 36
+
+	.type	Get_filter.buf2,%object @ @Get_filter.buf2
+	.section	.bss.Get_filter.buf2,"aw",%nobits
+	.p2align	2
+Get_filter.buf2:
+	.long	0                       @ 0x0
+	.size	Get_filter.buf2, 4
+
+	.section	.debug_str,"MS",%progbits,1
+.Linfo_string0:
+	.asciz	"Component: ARM Compiler 6.14 Tool: armclang [5db06c00]" @ string offset=0
+.Linfo_string1:
+	.asciz	"../APP/Src\\algorithm.c" @ string offset=55
+.Linfo_string2:
+	.asciz	"E:\\Soway\\Soway_product-soft\\105 - T119-GD\\E230 -  ds18b20-F8\\MDK-ARM" @ string offset=78
+.Linfo_string3:
+	.asciz	"buf_PCap"              @ string offset=147
+.Linfo_string4:
+	.asciz	"unsigned int"          @ string offset=156
+.Linfo_string5:
+	.asciz	"uint32_t"              @ string offset=169
+.Linfo_string6:
+	.asciz	"__ARRAY_SIZE_TYPE__"   @ string offset=178
+.Linfo_string7:
+	.asciz	"buf2"                  @ string offset=198
+.Linfo_string8:
+	.asciz	"int"                   @ string offset=203
+.Linfo_string9:
+	.asciz	"Get_filter"            @ string offset=207
+.Linfo_string10:
+	.asciz	"GetDelExtremeAndAverage" @ string offset=218
+.Linfo_string11:
+	.asciz	"SortArrayExtreme"      @ string offset=242
+.Linfo_string12:
+	.asciz	"GetAverage"            @ string offset=259
+.Linfo_string13:
+	.asciz	"PCap_buf"              @ string offset=270
+.Linfo_string14:
+	.asciz	"i"                     @ string offset=279
+.Linfo_string15:
+	.asciz	"unsigned char"         @ string offset=281
+.Linfo_string16:
+	.asciz	"uint8_t"               @ string offset=295
+.Linfo_string17:
+	.asciz	"j"                     @ string offset=303
+.Linfo_string18:
+	.asciz	"buf1"                  @ string offset=305
+.Linfo_string19:
+	.asciz	"bufz"                  @ string offset=310
+.Linfo_string20:
+	.asciz	"buf3"                  @ string offset=315
+.Linfo_string21:
+	.asciz	"signs"                 @ string offset=320
+.Linfo_string22:
+	.asciz	"initial"               @ string offset=326
+.Linfo_string23:
+	.asciz	"Array"                 @ string offset=334
+.Linfo_string24:
+	.asciz	"ArraySize"             @ string offset=340
+.Linfo_string25:
+	.asciz	"SortHeadSize"          @ string offset=350
+.Linfo_string26:
+	.asciz	"SortTailSize"          @ string offset=363
+.Linfo_string27:
+	.asciz	"temp"                  @ string offset=376
+.Linfo_string28:
+	.asciz	"DelHeadSize"           @ string offset=381
+.Linfo_string29:
+	.asciz	"DelTailSize"           @ string offset=393
+.Linfo_string30:
+	.asciz	"sum"                   @ string offset=405
+.Linfo_string31:
+	.asciz	"long long int"         @ string offset=409
+.Linfo_string32:
+	.asciz	"long int"              @ string offset=423
+	.section	.debug_abbrev,"",%progbits
+	.byte	1                       @ Abbreviation Code
+	.byte	17                      @ DW_TAG_compile_unit
+	.byte	1                       @ DW_CHILDREN_yes
+	.byte	37                      @ DW_AT_producer
+	.byte	14                      @ DW_FORM_strp
+	.byte	19                      @ DW_AT_language
+	.byte	5                       @ DW_FORM_data2
+	.byte	3                       @ DW_AT_name
+	.byte	14                      @ DW_FORM_strp
+	.byte	16                      @ DW_AT_stmt_list
+	.byte	6                       @ DW_FORM_data4
+	.byte	27                      @ DW_AT_comp_dir
+	.byte	14                      @ DW_FORM_strp
+	.byte	17                      @ DW_AT_low_pc
+	.byte	1                       @ DW_FORM_addr
+	.byte	85                      @ DW_AT_ranges
+	.byte	6                       @ DW_FORM_data4
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	2                       @ Abbreviation Code
+	.byte	46                      @ DW_TAG_subprogram
+	.byte	1                       @ DW_CHILDREN_yes
+	.byte	17                      @ DW_AT_low_pc
+	.byte	1                       @ DW_FORM_addr
+	.byte	18                      @ DW_AT_high_pc
+	.byte	1                       @ DW_FORM_addr
+	.byte	64                      @ DW_AT_frame_base
+	.byte	10                      @ DW_FORM_block1
+	.byte	3                       @ DW_AT_name
+	.byte	14                      @ DW_FORM_strp
+	.byte	58                      @ DW_AT_decl_file
+	.byte	11                      @ DW_FORM_data1
+	.byte	59                      @ DW_AT_decl_line
+	.byte	11                      @ DW_FORM_data1
+	.byte	39                      @ DW_AT_prototyped
+	.byte	12                      @ DW_FORM_flag
+	.byte	73                      @ DW_AT_type
+	.byte	19                      @ DW_FORM_ref4
+	.byte	63                      @ DW_AT_external
+	.byte	12                      @ DW_FORM_flag
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	3                       @ Abbreviation Code
+	.byte	52                      @ DW_TAG_variable
+	.byte	0                       @ DW_CHILDREN_no
+	.byte	3                       @ DW_AT_name
+	.byte	14                      @ DW_FORM_strp
+	.byte	73                      @ DW_AT_type
+	.byte	19                      @ DW_FORM_ref4
+	.byte	58                      @ DW_AT_decl_file
+	.byte	11                      @ DW_FORM_data1
+	.byte	59                      @ DW_AT_decl_line
+	.byte	11                      @ DW_FORM_data1
+	.byte	2                       @ DW_AT_location
+	.byte	10                      @ DW_FORM_block1
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	4                       @ Abbreviation Code
+	.byte	5                       @ DW_TAG_formal_parameter
+	.byte	0                       @ DW_CHILDREN_no
+	.byte	2                       @ DW_AT_location
+	.byte	10                      @ DW_FORM_block1
+	.byte	3                       @ DW_AT_name
+	.byte	14                      @ DW_FORM_strp
+	.byte	58                      @ DW_AT_decl_file
+	.byte	11                      @ DW_FORM_data1
+	.byte	59                      @ DW_AT_decl_line
+	.byte	11                      @ DW_FORM_data1
+	.byte	73                      @ DW_AT_type
+	.byte	19                      @ DW_FORM_ref4
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	5                       @ Abbreviation Code
+	.byte	52                      @ DW_TAG_variable
+	.byte	0                       @ DW_CHILDREN_no
+	.byte	2                       @ DW_AT_location
+	.byte	10                      @ DW_FORM_block1
+	.byte	3                       @ DW_AT_name
+	.byte	14                      @ DW_FORM_strp
+	.byte	58                      @ DW_AT_decl_file
+	.byte	11                      @ DW_FORM_data1
+	.byte	59                      @ DW_AT_decl_line
+	.byte	11                      @ DW_FORM_data1
+	.byte	73                      @ DW_AT_type
+	.byte	19                      @ DW_FORM_ref4
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	6                       @ Abbreviation Code
+	.byte	1                       @ DW_TAG_array_type
+	.byte	1                       @ DW_CHILDREN_yes
+	.byte	73                      @ DW_AT_type
+	.byte	19                      @ DW_FORM_ref4
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	7                       @ Abbreviation Code
+	.byte	33                      @ DW_TAG_subrange_type
+	.byte	0                       @ DW_CHILDREN_no
+	.byte	73                      @ DW_AT_type
+	.byte	19                      @ DW_FORM_ref4
+	.byte	55                      @ DW_AT_count
+	.byte	11                      @ DW_FORM_data1
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	8                       @ Abbreviation Code
+	.byte	22                      @ DW_TAG_typedef
+	.byte	0                       @ DW_CHILDREN_no
+	.byte	73                      @ DW_AT_type
+	.byte	19                      @ DW_FORM_ref4
+	.byte	3                       @ DW_AT_name
+	.byte	14                      @ DW_FORM_strp
+	.byte	58                      @ DW_AT_decl_file
+	.byte	11                      @ DW_FORM_data1
+	.byte	59                      @ DW_AT_decl_line
+	.byte	11                      @ DW_FORM_data1
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	9                       @ Abbreviation Code
+	.byte	36                      @ DW_TAG_base_type
+	.byte	0                       @ DW_CHILDREN_no
+	.byte	3                       @ DW_AT_name
+	.byte	14                      @ DW_FORM_strp
+	.byte	62                      @ DW_AT_encoding
+	.byte	11                      @ DW_FORM_data1
+	.byte	11                      @ DW_AT_byte_size
+	.byte	11                      @ DW_FORM_data1
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	10                      @ Abbreviation Code
+	.byte	36                      @ DW_TAG_base_type
+	.byte	0                       @ DW_CHILDREN_no
+	.byte	3                       @ DW_AT_name
+	.byte	14                      @ DW_FORM_strp
+	.byte	11                      @ DW_AT_byte_size
+	.byte	11                      @ DW_FORM_data1
+	.byte	62                      @ DW_AT_encoding
+	.byte	11                      @ DW_FORM_data1
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	11                      @ Abbreviation Code
+	.byte	46                      @ DW_TAG_subprogram
+	.byte	1                       @ DW_CHILDREN_yes
+	.byte	17                      @ DW_AT_low_pc
+	.byte	1                       @ DW_FORM_addr
+	.byte	18                      @ DW_AT_high_pc
+	.byte	1                       @ DW_FORM_addr
+	.byte	64                      @ DW_AT_frame_base
+	.byte	10                      @ DW_FORM_block1
+	.byte	3                       @ DW_AT_name
+	.byte	14                      @ DW_FORM_strp
+	.byte	58                      @ DW_AT_decl_file
+	.byte	11                      @ DW_FORM_data1
+	.byte	59                      @ DW_AT_decl_line
+	.byte	11                      @ DW_FORM_data1
+	.byte	39                      @ DW_AT_prototyped
+	.byte	12                      @ DW_FORM_flag
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	12                      @ Abbreviation Code
+	.byte	46                      @ DW_TAG_subprogram
+	.byte	1                       @ DW_CHILDREN_yes
+	.byte	17                      @ DW_AT_low_pc
+	.byte	1                       @ DW_FORM_addr
+	.byte	18                      @ DW_AT_high_pc
+	.byte	1                       @ DW_FORM_addr
+	.byte	64                      @ DW_AT_frame_base
+	.byte	10                      @ DW_FORM_block1
+	.byte	3                       @ DW_AT_name
+	.byte	14                      @ DW_FORM_strp
+	.byte	58                      @ DW_AT_decl_file
+	.byte	11                      @ DW_FORM_data1
+	.byte	59                      @ DW_AT_decl_line
+	.byte	11                      @ DW_FORM_data1
+	.byte	39                      @ DW_AT_prototyped
+	.byte	12                      @ DW_FORM_flag
+	.byte	73                      @ DW_AT_type
+	.byte	19                      @ DW_FORM_ref4
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	13                      @ Abbreviation Code
+	.byte	11                      @ DW_TAG_lexical_block
+	.byte	1                       @ DW_CHILDREN_yes
+	.byte	17                      @ DW_AT_low_pc
+	.byte	1                       @ DW_FORM_addr
+	.byte	18                      @ DW_AT_high_pc
+	.byte	1                       @ DW_FORM_addr
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	14                      @ Abbreviation Code
+	.byte	15                      @ DW_TAG_pointer_type
+	.byte	0                       @ DW_CHILDREN_no
+	.byte	73                      @ DW_AT_type
+	.byte	19                      @ DW_FORM_ref4
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	15                      @ Abbreviation Code
+	.byte	38                      @ DW_TAG_const_type
+	.byte	0                       @ DW_CHILDREN_no
+	.byte	73                      @ DW_AT_type
+	.byte	19                      @ DW_FORM_ref4
+	.byte	0                       @ EOM(1)
+	.byte	0                       @ EOM(2)
+	.byte	0                       @ EOM(3)
+	.section	.debug_info,"",%progbits
+.Lcu_begin0:
+	.long	.Ldebug_info_end0-.Ldebug_info_start0 @ Length of Unit
+.Ldebug_info_start0:
+	.short	3                       @ DWARF version number
+	.long	.debug_abbrev           @ Offset Into Abbrev. Section
+	.byte	4                       @ Address Size (in bytes)
+	.byte	1                       @ Abbrev [1] 0xb:0x262 DW_TAG_compile_unit
+	.long	.Linfo_string0          @ DW_AT_producer
+	.short	12                      @ DW_AT_language
+	.long	.Linfo_string1          @ DW_AT_name
+	.long	.Lline_table_start0     @ DW_AT_stmt_list
+	.long	.Linfo_string2          @ DW_AT_comp_dir
+	.long	0                       @ DW_AT_low_pc
+	.long	.Ldebug_ranges0         @ DW_AT_ranges
+	.byte	2                       @ Abbrev [2] 0x26:0xaa DW_TAG_subprogram
+	.long	.Lfunc_begin0           @ DW_AT_low_pc
+	.long	.Lfunc_end0             @ DW_AT_high_pc
+	.byte	1                       @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string9          @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	6                       @ DW_AT_decl_line
+	.byte	1                       @ DW_AT_prototyped
+	.long	245                     @ DW_AT_type
+	.byte	1                       @ DW_AT_external
+	.byte	3                       @ Abbrev [3] 0x3d:0x11 DW_TAG_variable
+	.long	.Linfo_string3          @ DW_AT_name
+	.long	208                     @ DW_AT_type
+	.byte	2                       @ DW_AT_decl_file
+	.byte	10                      @ DW_AT_decl_line
+	.byte	5                       @ DW_AT_location
+	.byte	3
+	.long	Get_filter.buf_PCap
+	.byte	3                       @ Abbrev [3] 0x4e:0x11 DW_TAG_variable
+	.long	.Linfo_string7          @ DW_AT_name
+	.long	220                     @ DW_AT_type
+	.byte	2                       @ DW_AT_decl_file
+	.byte	10                      @ DW_AT_decl_line
+	.byte	5                       @ DW_AT_location
+	.byte	3
+	.long	Get_filter.buf2
+	.byte	4                       @ Abbrev [4] 0x5f:0xe DW_TAG_formal_parameter
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	52
+	.long	.Linfo_string13         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	6                       @ DW_AT_decl_line
+	.long	245                     @ DW_AT_type
+	.byte	5                       @ Abbrev [5] 0x6d:0xe DW_TAG_variable
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	48
+	.long	.Linfo_string14         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	8                       @ DW_AT_decl_line
+	.long	566                     @ DW_AT_type
+	.byte	5                       @ Abbrev [5] 0x7b:0xe DW_TAG_variable
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	44
+	.long	.Linfo_string17         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	8                       @ DW_AT_decl_line
+	.long	566                     @ DW_AT_type
+	.byte	5                       @ Abbrev [5] 0x89:0xe DW_TAG_variable
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	40
+	.long	.Linfo_string18         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	9                       @ DW_AT_decl_line
+	.long	220                     @ DW_AT_type
+	.byte	5                       @ Abbrev [5] 0x97:0xe DW_TAG_variable
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	12
+	.long	.Linfo_string19         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	9                       @ DW_AT_decl_line
+	.long	584                     @ DW_AT_type
+	.byte	5                       @ Abbrev [5] 0xa5:0xe DW_TAG_variable
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	8
+	.long	.Linfo_string20         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	11                      @ DW_AT_decl_line
+	.long	245                     @ DW_AT_type
+	.byte	5                       @ Abbrev [5] 0xb3:0xe DW_TAG_variable
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	4
+	.long	.Linfo_string21         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	13                      @ DW_AT_decl_line
+	.long	566                     @ DW_AT_type
+	.byte	5                       @ Abbrev [5] 0xc1:0xe DW_TAG_variable
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	0
+	.long	.Linfo_string22         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	13                      @ DW_AT_decl_line
+	.long	566                     @ DW_AT_type
+	.byte	0                       @ End Of Children Mark
+	.byte	6                       @ Abbrev [6] 0xd0:0xc DW_TAG_array_type
+	.long	220                     @ DW_AT_type
+	.byte	7                       @ Abbrev [7] 0xd5:0x6 DW_TAG_subrange_type
+	.long	238                     @ DW_AT_type
+	.byte	9                       @ DW_AT_count
+	.byte	0                       @ End Of Children Mark
+	.byte	8                       @ Abbrev [8] 0xdc:0xb DW_TAG_typedef
+	.long	231                     @ DW_AT_type
+	.long	.Linfo_string5          @ DW_AT_name
+	.byte	1                       @ DW_AT_decl_file
+	.byte	64                      @ DW_AT_decl_line
+	.byte	9                       @ Abbrev [9] 0xe7:0x7 DW_TAG_base_type
+	.long	.Linfo_string4          @ DW_AT_name
+	.byte	7                       @ DW_AT_encoding
+	.byte	4                       @ DW_AT_byte_size
+	.byte	10                      @ Abbrev [10] 0xee:0x7 DW_TAG_base_type
+	.long	.Linfo_string6          @ DW_AT_name
+	.byte	8                       @ DW_AT_byte_size
+	.byte	7                       @ DW_AT_encoding
+	.byte	9                       @ Abbrev [9] 0xf5:0x7 DW_TAG_base_type
+	.long	.Linfo_string8          @ DW_AT_name
+	.byte	5                       @ DW_AT_encoding
+	.byte	4                       @ DW_AT_byte_size
+	.byte	2                       @ Abbrev [2] 0xfc:0x50 DW_TAG_subprogram
+	.long	.Lfunc_begin1           @ DW_AT_low_pc
+	.long	.Lfunc_end1             @ DW_AT_high_pc
+	.byte	1                       @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string10         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	159                     @ DW_AT_decl_line
+	.byte	1                       @ DW_AT_prototyped
+	.long	245                     @ DW_AT_type
+	.byte	1                       @ DW_AT_external
+	.byte	4                       @ Abbrev [4] 0x113:0xe DW_TAG_formal_parameter
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	12
+	.long	.Linfo_string23         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	159                     @ DW_AT_decl_line
+	.long	596                     @ DW_AT_type
+	.byte	4                       @ Abbrev [4] 0x121:0xe DW_TAG_formal_parameter
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	8
+	.long	.Linfo_string24         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	159                     @ DW_AT_decl_line
+	.long	601                     @ DW_AT_type
+	.byte	4                       @ Abbrev [4] 0x12f:0xe DW_TAG_formal_parameter
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	4
+	.long	.Linfo_string25         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	160                     @ DW_AT_decl_line
+	.long	601                     @ DW_AT_type
+	.byte	4                       @ Abbrev [4] 0x13d:0xe DW_TAG_formal_parameter
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	0
+	.long	.Linfo_string26         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	160                     @ DW_AT_decl_line
+	.long	601                     @ DW_AT_type
+	.byte	0                       @ End Of Children Mark
+	.byte	11                      @ Abbrev [11] 0x14c:0x75 DW_TAG_subprogram
+	.long	.Lfunc_begin2           @ DW_AT_low_pc
+	.long	.Lfunc_end2             @ DW_AT_high_pc
+	.byte	1                       @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string11         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	76                      @ DW_AT_decl_line
+	.byte	1                       @ DW_AT_prototyped
+	.byte	4                       @ Abbrev [4] 0x15e:0xe DW_TAG_formal_parameter
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	24
+	.long	.Linfo_string23         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	76                      @ DW_AT_decl_line
+	.long	596                     @ DW_AT_type
+	.byte	4                       @ Abbrev [4] 0x16c:0xe DW_TAG_formal_parameter
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	20
+	.long	.Linfo_string24         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	76                      @ DW_AT_decl_line
+	.long	601                     @ DW_AT_type
+	.byte	4                       @ Abbrev [4] 0x17a:0xe DW_TAG_formal_parameter
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	16
+	.long	.Linfo_string25         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	77                      @ DW_AT_decl_line
+	.long	601                     @ DW_AT_type
+	.byte	4                       @ Abbrev [4] 0x188:0xe DW_TAG_formal_parameter
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	12
+	.long	.Linfo_string26         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	77                      @ DW_AT_decl_line
+	.long	601                     @ DW_AT_type
+	.byte	5                       @ Abbrev [5] 0x196:0xe DW_TAG_variable
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	8
+	.long	.Linfo_string14         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	79                      @ DW_AT_decl_line
+	.long	220                     @ DW_AT_type
+	.byte	5                       @ Abbrev [5] 0x1a4:0xe DW_TAG_variable
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	4
+	.long	.Linfo_string17         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	79                      @ DW_AT_decl_line
+	.long	220                     @ DW_AT_type
+	.byte	5                       @ Abbrev [5] 0x1b2:0xe DW_TAG_variable
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	0
+	.long	.Linfo_string27         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	80                      @ DW_AT_decl_line
+	.long	245                     @ DW_AT_type
+	.byte	0                       @ End Of Children Mark
+	.byte	12                      @ Abbrev [12] 0x1c1:0x75 DW_TAG_subprogram
+	.long	.Lfunc_begin3           @ DW_AT_low_pc
+	.long	.Lfunc_end3             @ DW_AT_high_pc
+	.byte	1                       @ DW_AT_frame_base
+	.byte	93
+	.long	.Linfo_string12         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	125                     @ DW_AT_decl_line
+	.byte	1                       @ DW_AT_prototyped
+	.long	245                     @ DW_AT_type
+	.byte	4                       @ Abbrev [4] 0x1d7:0xe DW_TAG_formal_parameter
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	32
+	.long	.Linfo_string23         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	125                     @ DW_AT_decl_line
+	.long	596                     @ DW_AT_type
+	.byte	4                       @ Abbrev [4] 0x1e5:0xe DW_TAG_formal_parameter
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	28
+	.long	.Linfo_string24         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	125                     @ DW_AT_decl_line
+	.long	601                     @ DW_AT_type
+	.byte	4                       @ Abbrev [4] 0x1f3:0xe DW_TAG_formal_parameter
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	24
+	.long	.Linfo_string28         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	126                     @ DW_AT_decl_line
+	.long	601                     @ DW_AT_type
+	.byte	4                       @ Abbrev [4] 0x201:0xe DW_TAG_formal_parameter
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	20
+	.long	.Linfo_string29         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	126                     @ DW_AT_decl_line
+	.long	601                     @ DW_AT_type
+	.byte	5                       @ Abbrev [5] 0x20f:0xe DW_TAG_variable
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	8
+	.long	.Linfo_string30         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	128                     @ DW_AT_decl_line
+	.long	606                     @ DW_AT_type
+	.byte	13                      @ Abbrev [13] 0x21d:0x18 DW_TAG_lexical_block
+	.long	.Ltmp75                 @ DW_AT_low_pc
+	.long	.Ltmp80                 @ DW_AT_high_pc
+	.byte	5                       @ Abbrev [5] 0x226:0xe DW_TAG_variable
+	.byte	2                       @ DW_AT_location
+	.byte	145
+	.byte	4
+	.long	.Linfo_string14         @ DW_AT_name
+	.byte	2                       @ DW_AT_decl_file
+	.byte	135                     @ DW_AT_decl_line
+	.long	613                     @ DW_AT_type
+	.byte	0                       @ End Of Children Mark
+	.byte	0                       @ End Of Children Mark
+	.byte	8                       @ Abbrev [8] 0x236:0xb DW_TAG_typedef
+	.long	577                     @ DW_AT_type
+	.long	.Linfo_string16         @ DW_AT_name
+	.byte	1                       @ DW_AT_decl_file
+	.byte	62                      @ DW_AT_decl_line
+	.byte	9                       @ Abbrev [9] 0x241:0x7 DW_TAG_base_type
+	.long	.Linfo_string15         @ DW_AT_name
+	.byte	8                       @ DW_AT_encoding
+	.byte	1                       @ DW_AT_byte_size
+	.byte	6                       @ Abbrev [6] 0x248:0xc DW_TAG_array_type
+	.long	220                     @ DW_AT_type
+	.byte	7                       @ Abbrev [7] 0x24d:0x6 DW_TAG_subrange_type
+	.long	238                     @ DW_AT_type
+	.byte	7                       @ DW_AT_count
+	.byte	0                       @ End Of Children Mark
+	.byte	14                      @ Abbrev [14] 0x254:0x5 DW_TAG_pointer_type
+	.long	245                     @ DW_AT_type
+	.byte	15                      @ Abbrev [15] 0x259:0x5 DW_TAG_const_type
+	.long	220                     @ DW_AT_type
+	.byte	9                       @ Abbrev [9] 0x25e:0x7 DW_TAG_base_type
+	.long	.Linfo_string31         @ DW_AT_name
+	.byte	5                       @ DW_AT_encoding
+	.byte	8                       @ DW_AT_byte_size
+	.byte	9                       @ Abbrev [9] 0x265:0x7 DW_TAG_base_type
+	.long	.Linfo_string32         @ DW_AT_name
+	.byte	5                       @ DW_AT_encoding
+	.byte	4                       @ DW_AT_byte_size
+	.byte	0                       @ End Of Children Mark
+.Ldebug_info_end0:
+	.section	.debug_ranges,"",%progbits
+.Ldebug_ranges0:
+	.long	.Lfunc_begin0
+	.long	.Lfunc_end0
+	.long	.Lfunc_begin1
+	.long	.Lfunc_end1
+	.long	.Lfunc_begin2
+	.long	.Lfunc_end2
+	.long	.Lfunc_begin3
+	.long	.Lfunc_end3
+	.long	0
+	.long	0
+	.ident	"Component: ARM Compiler 6.14 Tool: armclang [5db06c00]"
+	.section	".note.GNU-stack","",%progbits
+	.eabi_attribute	30, 6	@ Tag_ABI_optimization_goals
+	.ARM_attribute	16, 1	@ Tag_AV_eba
+	.section	.debug_line,"",%progbits
+.Lline_table_start0:

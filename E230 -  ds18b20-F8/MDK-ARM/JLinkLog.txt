@@ -1,0 +1,61 @@
+T058C 000:010.326   SEGGER J-Link V6.82 Log File
+T058C 000:010.746   DLL Compiled: Jul 20 2020 13:38:38
+T058C 000:010.756   Logging started @ 2022-03-21 02:43
+T058C 000:010.766 - 10.770ms
+T058C 000:010.784 JLINK_SetWarnOutHandler(...)
+T058C 000:010.798 - 0.018ms
+T058C 000:010.809 JLINK_OpenEx(...)
+T058C 000:013.341   Firmware: J-Link V11 compiled Jul 28 2021 10:07:38
+T058C 000:013.538   Decompressing FW timestamp took 152 us
+T058C 000:018.923   Hardware: V11.00
+T058C 000:018.947   S/N: 50125509
+T058C 000:018.961   OEM: SEGGER
+T058C 000:018.975   Feature(s): RDI, GDB, FlashDL, FlashBP, JFlash
+T058C 000:022.823   TELNET listener socket opened on port 19021
+T058C 000:022.938   WEBSRV Starting webserver
+T058C 000:023.042   WEBSRV Webserver running on local port 19081
+T058C 000:023.059 - 12.254ms returns "O.K."
+T058C 000:023.077 JLINK_GetEmuCaps()
+T058C 000:023.094 - 0.021ms returns 0xB9FF7BBF
+T058C 000:023.114 JLINK_TIF_GetAvailable(...)
+T058C 000:023.925 - 0.820ms
+T058C 000:023.945 JLINK_SetErrorOutHandler(...)
+T058C 000:023.955 - 0.014ms
+T058C 000:023.980 JLINK_ExecCommand("ProjectFile = "E:\Soway\Soway_product-soft\105 - ÎÂ¶È´«¸ÐÆ÷T119-GD\E230 -  ds18b20-F8\MDK-ARM\JLinkSettings.ini"", ...). 
+T058C 000:037.224   Ref file found at: D:\Keil_v5\ARM\Segger\JLinkDevices.ref
+T058C 000:037.415   XML referenced by ref file: C:\Program Files (x86)\SEGGER\JLink\JLinkDevices.xml
+T058C 000:038.769   C:\Program Files (x86)\SEGGER\JLink\JLinkDevices.xml evaluated successfully.
+T058C 000:101.798   Device "CORTEX-M23" selected.
+T058C 000:102.221 - 78.250ms returns 0x00
+T058C 000:105.698 JLINK_ExecCommand("Device = GD32E230F8", ...). 
+T058C 000:108.580   Device "CORTEX-M23" selected.
+T058C 000:108.968 - 3.254ms returns 0x00
+T058C 000:108.992 JLINK_GetHardwareVersion()
+T058C 000:109.002 - 0.014ms returns 110000
+T058C 000:109.013 JLINK_GetDLLVersion()
+T058C 000:109.022 - 0.013ms returns 68200
+T058C 000:109.033 JLINK_GetOEMString(...)
+T058C 000:109.045 JLINK_GetFirmwareString(...)
+T058C 000:109.054 - 0.013ms
+T058C 000:117.331 JLINK_GetDLLVersion()
+T058C 000:117.357 - 0.030ms returns 68200
+T058C 000:117.369 JLINK_GetCompileDateTime()
+T058C 000:117.378 - 0.013ms
+T058C 000:120.123 JLINK_GetFirmwareString(...)
+T058C 000:120.141 - 0.022ms
+T058C 000:122.719 JLINK_GetHardwareVersion()
+T058C 000:122.734 - 0.020ms returns 110000
+T058C 000:126.006 JLINK_GetSN()
+T058C 000:126.033 - 0.031ms returns 50125509
+T058C 000:129.038 JLINK_GetOEMString(...)
+T058C 000:133.669 JLINK_TIF_Select(JLINKARM_TIF_SWD)
+T058C 000:136.707 - 3.047ms returns 0x00
+T058C 000:136.725 JLINK_HasError()
+T058C 000:136.756 JLINK_SetSpeed(5000)
+T058C 000:137.348 - 0.600ms
+T058C 000:137.372 JLINK_GetId()
+T058C 001:107.591 - 970.255ms returns 0x00000000
+T058C 002:426.305 JLINK_Close()
+T058C 002:432.060 - 5.779ms
+T058C 002:432.090   
+T058C 002:432.100   Closed
